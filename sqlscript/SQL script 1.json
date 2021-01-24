@@ -2,14 +2,15 @@
 	"name": "SQL script 1",
 	"properties": {
 		"content": {
-			"query": "",
+			"query": "CREATE TABLE Employee(\n    emp_no INT,\n    birth_date DATE,\n    first_name VARCHAR(50),\n    last_name VARCHAR(50),\n    gender VARCHAR(6),\n    hire_date DATE\n);\n",
 			"metadata": {
 				"language": "sql"
 			},
 			"currentConnection": {
-				"name": "Practicedb",
-				"type": "SqlOnDemand"
+				"poolName": "Built-in",
+				"databaseName": "Practicedb"
 			}
-		}
+		},
+		"type": "SqlQuery"
 	}
 }
