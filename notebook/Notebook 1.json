@@ -1,0 +1,52 @@
+{
+	"name": "Notebook 1",
+	"properties": {
+		"nbformat": 4,
+		"nbformat_minor": 2,
+		"bigDataPool": {
+			"referenceName": "SparkPool",
+			"type": "BigDataPoolReference"
+		},
+		"sessionProperties": {
+			"driverMemory": "28g",
+			"driverCores": 4,
+			"executorMemory": "28g",
+			"executorCores": 4,
+			"numExecutors": 11,
+			"conf": {
+				"spark.dynamicAllocation.enabled": "false",
+				"spark.dynamicAllocation.minExecutors": "11",
+				"spark.dynamicAllocation.maxExecutors": "11"
+			}
+		},
+		"metadata": {
+			"saveOutput": true,
+			"language_info": {
+				"name": "scala"
+			},
+			"a365ComputeOptions": {
+				"id": "/subscriptions/8fdcd02f-a3c8-498f-82e6-cd3faaa88a9d/resourceGroups/Practicegrp/providers/Microsoft.Synapse/workspaces/synapsepracticeone/bigDataPools/SparkPool",
+				"name": "SparkPool",
+				"type": "Spark",
+				"endpoint": "https://synapsepracticeone.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/SparkPool",
+				"auth": {
+					"type": "AAD",
+					"authResource": "https://dev.azuresynapse.net"
+				},
+				"sparkVersion": "2.4",
+				"nodeCount": 10,
+				"cores": 8,
+				"memory": 56
+			}
+		},
+		"cells": [
+			{
+				"cell_type": "code",
+				"source": [
+					"spark.sparkContext.setLogLevel(\"Error\")"
+				],
+				"execution_count": null
+			}
+		]
+	}
+}
